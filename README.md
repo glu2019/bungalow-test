@@ -6,7 +6,7 @@
 
 2. Install postgresql10.10
 
-3. Create admin user for the database, run the following sql statements.
+3. Create an admin user for the database, run the following sql statements.
 ```sql
 CREATE DATABASE bgdb;
 CREATE USER admin WITH PASSWORD '123456';
@@ -27,6 +27,11 @@ pip3.6 install -r requirements_dev.txt
 
 8. Make migrations and migrate all data
 ```bash
+cd drf
+mkdir migrations
+cd migrations
+touch __init__.py
+cd ../../
 python3.6 manage.py showmigrations
 python3.6 manage.py migrate
 python3.6 manage.py makemigrations
