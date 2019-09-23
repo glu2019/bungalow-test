@@ -1,0 +1,28 @@
+# This is a sample of the settings.ini file.
+# Put the server specific settings and place in the /etc/bg_settings/ folder
+#
+
+[database]
+DATABASE_USER: admin
+DATABASE_PASSWORD: 123456
+DATABASE_HOST: 127.0.0.1
+DATABASE_NAME: bgdb
+DATABASE_ENGINE: django.db.backends.postgresql
+DATABASE_PORT: 5432
+
+[secrets]
+SECRET_KEY: muw4@sosng#kq-gt_g%bpts^e66g-=ejm5422wq3z1dlpr=-bm
+
+[ssl]
+SECURE_SSL_REDIRECT: false
+SESSION_COOKIE_SECURE: false
+CSRF_COOKIE_SECURE: false
+
+[django]
+LANGUAGE_CODE: en-us
+TIME_ZONE: US/Eastern
+DEBUG: true
+DEBUG_API: true
+
+[auth]
+LOGIN_REDIRECT_URL: /api/bungalow/

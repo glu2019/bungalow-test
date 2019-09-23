@@ -1,0 +1,23 @@
+[run]
+omit =
+    drf/migrations/*
+    */__init__.py
+    */tests/*
+    manage.py
+    */apps.py
+    */forms.py
+    .backuppostgresql.py
+    ./bungalow/wsgi.py
+    ./drf/management/commands/*
+
+[report]
+omit =
+    drf/migrations/*
+    */__init__.py
+    */tests/*
+    manage.py
+    */apps.py
+    */forms.py
+    .backuppostgresql.py
+    ./bungalow/wsgi.py
+    ./drf/management/commands/*

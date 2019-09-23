@@ -1,0 +1,24 @@
+[flake8]
+per-file-ignores =
+    drf/apps.py:F401
+ignore =
+    # Ignore document error
+    D,
+    # Sometime we should write import statements not at top of file. (e.g) for test coverage
+    E402,
+    # Please visit this link (https://github.com/PyCQA/pycodestyle/issues/498)
+    W503,
+    # We use BLACK to change the format for all python files and E203 is not appropriate for PEP 8
+    E203,
+    # After the test code is in place, we will resolve the following warnings.
+    C901,
+    E501,
+    F405,
+    F403,
+    F811,
+    W605
+
+exclude =
+    drf/migrations/*
+max-complexity = 23
+max-line-length= 110
