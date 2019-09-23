@@ -19,7 +19,7 @@ source env/bin/activate
 ```
 5. Install all dependences
 ```bash
-pip3.6 install -r requirements.txt
+pip3.6 install -r requirements_dev.txt
 ```
 6. Make a configure file in the path /etc/bg_settings/settings.ini
 
@@ -56,10 +56,9 @@ python3.6 manage.py runserver 0:8080
 log in by using your created user.
 
 15. You are good to go to test the apis.  You can also visit the http://ec2-18-216-84-21.us-east-2.compute.amazonaws.com/api/login/
-
+```
 username: admin
 password: Welcome0!
-
-The major features---you can create, query, filter, and sort the bungalow records. 
-
----The End---
+```
+## The major features
+You can create, query, filter, and sort the bungalow records. 
